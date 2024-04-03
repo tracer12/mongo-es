@@ -1,0 +1,31 @@
+.btn-main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    color: rgba(0, 0, 0, 0.95);
+  }
+  
+  .btn-main-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 15px 0;
+  }
+  
+  .run-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: 20px 15px; */
+    border-radius: 5px;
+    width : 60px;
+    height : 40px;
+    background-color: #00e007;
+  }
+
+    
