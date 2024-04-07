@@ -3,7 +3,8 @@ import CodeEditor from './CodeEditor.jsx';
 import '../components_css/Home.css'
 import ExplainModal from './ExplainModal.jsx';
 import SaveButton from './SaveButton.jsx';
-import GuiComponent from './GuiComponent.jsx';
+import HistoryButton from './HistoryButton.jsx';
+//import GuiComponent from './GuiComponent.jsx';
 
 function Home() {
     return (
@@ -11,8 +12,9 @@ function Home() {
             <div className='main-buttons'>
                 <ExplainModal />
                 <SaveButton />
+                <HistoryButton />
             </div>
-            <GuiComponent />
+            {/* <GuiComponent /> */}
             <CodeEditor />
 
         </main>

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import "../components_css/SaveButton.css";
+import "../components_css/UtilButton.css";
 import { FaRegSave } from "react-icons/fa";
 
 const SaveButton = () => {
 
     return (
         <>
-            <button className="btn-save">
-                save
-                <div className="FaRegSave">
-                    <FaRegSave />
+            <button className="save-button">
+                <div className="save-button-content">
+                    save
+                    <div className="FaRegSave">
+                        <FaRegSave />
+                    </div>
                 </div>
             </button>
         </>

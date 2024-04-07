@@ -1,26 +1,19 @@
 import { useRef, useState } from "react";
 import { Box, HStack } from "@chakra-ui/react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Button, Text } from "@chakra-ui/react";
 import { Editor } from "@monaco-editor/react";
-import LanguageSelector from "./LanguageSelector.jsx";
-import { CODE_SNIPPETS } from "../constants.js";
+import { default_VALUE } from "../constants.js"
 import Output from "./Output.jsx";
+
 
 const CodeEditor = () => {
     const editorRef = useRef();
     const [value, setValue] = useState("");
-    const [language, setLanguage] = useState("javascript");
 
     const onMount = (editor) => {
         editorRef.current = editor;
         editor.focus();
     };
-
-    const onSelect = (language) => {
-        setLanguage(language);
-        setValue(CODE_SNIPPETS[language]);
-    };
-
     const editorStyle = {
         border: '1px solid #000000', // 테두리 스타일 지정
 
@@ -31,7 +24,13 @@ const CodeEditor = () => {
             <HStack spacing={8}>
                 <ChakraProvider>
                     <Box>
-                        <LanguageSelector language={language} onSelect={onSelect} />
+                        {/* <LanguageSelector /> */}
+                        <Box ml={2} mb={4}>
+                            <Text mb={2} fontSize="lg">
+                                Input
+                            </Text>
+                            <Button>파이프라인</Button>
+                        </Box>
                         <div style={editorStyle}>
                             <Editor
                                 options={{
@@ -41,17 +40,17 @@ const CodeEditor = () => {
                                 }}
                                 width="30vw"
                                 height="50vh"
-                                // theme="vs-white"
+                                theme="vs-white"
                                 borderRadius={4}
-                                language={language}
-                                defaultValue={CODE_SNIPPETS[language]}
+                                language="json"
+                                defaultValue={default_VALUE["json"]}
                                 onMount={onMount}
                                 value={value}
                                 onChange={(value) => setValue(value)}
                             />
                         </div>
                     </Box>
-                    <Output editorRef={editorRef} language={language} />
+                    <Output editorRef={editorRef} />
                 </ChakraProvider>
             </HStack>
         </Box>
