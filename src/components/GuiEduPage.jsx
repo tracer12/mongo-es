@@ -8,16 +8,15 @@ import {
     MenuList,
     Text,
 } from "@chakra-ui/react";
-import '../components_css/GuiComponent.css'
 import React, { useState } from "react";
 
-const GuiComponent = () => {
+const GuiEduPage = () => {
 
     return (
         <div>
-            asdf
+            gui학습페이지입니다
         </div>
     );
 }
 
-export default GuiComponent;
+export default GuiEduPage;
