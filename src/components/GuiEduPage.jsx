@@ -11,7 +11,6 @@ import {
 import React, { useState } from "react";
 
 const GuiEduPage = () => {
-
     return (
         <div>
             gui학습페이지입니다

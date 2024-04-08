@@ -8,7 +8,7 @@ const SaveButton = () => {
         <>
             <button className="save-button">
                 <div className="save-button-content">
-                    save
+                    Save
                     <div className="FaRegSave">
                         <FaRegSave />
                     </div>

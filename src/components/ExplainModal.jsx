@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../components_css/ExplainModal.css";
+import ExplainOrigin from "./ExplainComponent/ExplainOrigin";
+import ExplainTranslate from "./ExplainComponent/ExplainTranslate";
+import "../components_css/ExplainContent.css"
 
 const ExplainModal = () => {
     const [modal, setModal] = useState(false);
@@ -27,14 +30,10 @@ const ExplainModal = () => {
                         <p className="modal-title">Explain</p>
                         <br />
                         <p className="modal-text">
-                            {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            It has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of Lorem Ipsum. */}
-                            explain에 대한 자연어 해석이 들어 갈 자리입니다.
+                            <div className="explain-content-box">
+                                <ExplainOrigin />
+                                <ExplainTranslate />
+                            </div>
                         </p>
                         <button className="modal-close-button" onClick={toggleModal}>
                             CLOSE

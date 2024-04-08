@@ -7,9 +7,9 @@
   
   .main-buttons {
     display: grid;
-    padding : 20px;
-    grid-template-columns: 10fr 1fr 5fr;
-    gap: 20px;
+    padding : 10px;
+    grid-template-columns: 9.5fr 0.5fr 5fr;
+    gap: 15px;
     margin: 15px 0;
   }
 
