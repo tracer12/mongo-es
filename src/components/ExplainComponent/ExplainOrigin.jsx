@@ -1,9 +1,8 @@
 import React from "react";
-import "../../components_css/ExplainContent.css"
 
 const ExplainOrigin = () => {
     return (
-        <div className="explain-origin-box">
+        <div className="border border-solid border-gray-400 rounded-md w-[47%] max-h-[28vw] overflow-auto overflow-x-hidden">
             Explain 원본이 들어갈 자리입니다
             <br />
             Explain 원본이 들어갈 자리입니다

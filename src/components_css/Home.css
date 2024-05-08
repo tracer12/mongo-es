@@ -1,17 +1,4 @@
-.button-main-container {
+.Home-main-container {
     grid-area: main;
-    overflow-y: auto;
-    padding: 20px 20px;
-    color: rgba(0, 0, 0, 0.95);
   }
   
-  .main-buttons {
-    display: grid;
-    padding : 10px;
-    grid-template-columns: 9.5fr 0.5fr 5fr;
-    gap: 15px;
-    margin: 15px 0;
-  }
-
-
-    

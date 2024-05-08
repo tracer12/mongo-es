@@ -1,45 +1,45 @@
 import React from 'react'
-import {
-    BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill,
-    BsListCheck, BsMenuButtonWideFill, BsFillGearFill
-}
-    from 'react-icons/bs'
-
-import '../components_css/Sidebar.css'
 
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
     return (
-        <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
-            <div className='sidebar-title'>
-                <div className='sidebar-brand'>
-                    MongoDB
+        <div>
+            <aside id="default-sidebar" class="fixed top-0 left-0 z-2 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+                <div class="h-full px-3 py-4 overflow-y-auto bg-gray-200 dark:bg-gray-800">
+                    <ul class="space-y-2 font-medium">
+                        <li className='pt-2'>
+                            <span class="pl-8 text-3xl">Mongo-es</span>
+                        </li>
+                        <br />
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <span className='icon close_icon' onClick={OpenSidebar}>X</span>
-            </div>
+            </aside>
 
-            <ul className='sidebar-list'>
-                <li className='sidebar-list-item'>
-                    <a href="">
-                        shopDB
-                    </a>
-                </li>
-                <li className='sidebar-list-item'>
-                    <a href="">
-                        mongoDB
-                    </a>
-                </li>
-                <li className='sidebar-list-item'>
-                    <a href="">
-                        mallDB
-                    </a>
-                </li>
-                <li className='sidebar-list-item'>
-                    <a href="">
-                        exampleDB
-                    </a>
-                </li>
-            </ul>
-        </aside>
+        </div>
     )
 }
 

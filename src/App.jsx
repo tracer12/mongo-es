@@ -8,20 +8,17 @@ import GuiEduPage from './components/GuiEduPage.jsx'
 
 
 function App() {
-  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
+
   const [openGuiPageToggle, setOpenGuiPageToggle] = useState(true)
 
-  const OpenSidebar = () => {
-    setOpenSidebarToggle(!openSidebarToggle)
-  }
   const OpenGuiPage = () => {
     setOpenGuiPageToggle(!openGuiPageToggle)
   }
 
   return (
-    <div className='grid-container'>
-      <Header OpenSidebar={OpenSidebar} OpenGuiPage={OpenGuiPage} openGuiPageToggle={openGuiPageToggle} />
-      <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />
+    <div className='grid-container grid grid-cols-[260px,1fr,1fr,1fr] grid-rows-[0.2fr,3fr] h-screen'>
+      <Header OpenGuiPage={OpenGuiPage} openGuiPageToggle={openGuiPageToggle} />
+      <Sidebar />
 
       {openGuiPageToggle ? <Home /> : <GuiEduPage />}
 
