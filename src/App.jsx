@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header.jsx'
 import Sidebar from './components/Sidebar.jsx'
-import Home from './components/Home.jsx'
-import GuiEduPage from './components/GuiEduPage.jsx'
+import Home from '../src/components/Home/Home.jsx'
+import GuiEduPage from '../src/components/GuiPage/GuiEduPage.jsx'
 
 
 

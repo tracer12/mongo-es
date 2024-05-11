@@ -1,4 +1,4 @@
-import { FaHistory } from "react-icons/fa";
+import React from "react";
 
 const HistoryButton = () => {
 
@@ -7,9 +7,6 @@ const HistoryButton = () => {
             <button className="border border-solid border-green-600 rounded-md bg-green-400 w-20">
                 <div className="">
                     History
-                    {/* <div className="FaHistory">
-                        <FaHistory />
-                    </div> */}
                 </div>
             </button>
         </>

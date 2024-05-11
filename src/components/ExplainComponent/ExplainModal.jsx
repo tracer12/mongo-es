@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ExplainOrigin from "./ExplainComponent/ExplainOrigin";
-import ExplainTranslate from "./ExplainComponent/ExplainTranslate";
+import ExplainOrigin from "../ExplainComponent/ExplainOrigin";
+import ExplainTranslate from "../ExplainComponent/ExplainTranslate";
 
 const ExplainModal = () => {
     const [modal, setModal] = useState(false);

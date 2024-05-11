@@ -1,3 +1,5 @@
+const { px } = require('framer-motion');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -129,10 +131,14 @@ module.exports = {
                 "9/12": "75%",
                 "10/12": "83.33%",
                 "11/12": "91.66%",
+                "930": "930px",
                 "problemStage-width": "5.75rem",
                 "problemStage-isCompleted": "5.5rem",
                 "problemStage-title": "11.75rem",
                 "problemStage-info": "21.25rem",
+            },
+            pl: {
+                "120": "120px",
             },
             borderRadius: {
                 "problemStage-selected-radius": "4px",

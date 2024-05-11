@@ -1,9 +1,10 @@
 import React from 'react'
-import CodeEditor from './CodeEditor.jsx';
-import '../components_css/Home.css'
-import ExplainModal from './ExplainModal.jsx';
-import SaveButton from '../components/Buttons/SaveButton.jsx';
-import HistoryButton from '../components/Buttons/HistoryButton.jsx';
+import '../../components_css/Home.css'
+import CodeEditorForm from '../Home/CodeEditor.jsx';
+import ExplainModal from '../ExplainComponent/ExplainModal.jsx';
+import SaveButton from '../Buttons/SaveButton.jsx';
+import HistoryButton from '../Buttons/HistoryButton.jsx';
+import OutputForm from '../Home/Output.jsx'
 
 function Home() {
     return (
@@ -15,8 +16,8 @@ function Home() {
                 </div>
                 <HistoryButton />
             </div>
-            <CodeEditor />
-
+            <CodeEditorForm />
+            <OutputForm />
         </main>
     )
 }
