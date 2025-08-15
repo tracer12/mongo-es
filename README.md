@@ -34,9 +34,9 @@
 ---
 
 ## 💡 주요 기능
-1. BSON 형식 Aggregation 파이프라인 입력 및 검증
-2. Aggregation 실행 및 결과 JSON 출력
-3. 성능 최적화 제안 제공
-4. Treeview를 통한 파이프라인 구조 시각화
-5. React Suspense 기반 로딩 상태 처리
+1. **BSON 형식 Aggregation 파이프라인 입력 및 검증**
+2. **Aggregation 실행 및 결과 JSON 출력**
+3. **성능 최적화 제안 제공**
+4. **Treeview를 통한 파이프라인 구조 시각화**
+5. **React Suspense 기반 로딩 상태 처리**
 
