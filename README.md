@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Mongo-Escalator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Mongo-Escalator**는 MongoDB의 Aggregation 파이프라인 학습을 돕기 위해 제작된 **웹 기반 시각화 플랫폼**입니다.  
+사용자는 BSON 형식의 파이프라인을 입력하고, **실행 결과**와 **최적화 제안**을 모달창 및 JSON 형태로 확인할 수 있습니다.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 프로젝트 개요
+- **목적**
+  - MongoDB Aggregation 파이프라인 학습 과정에서 직관적인 시각화 제공
+  - 파이프라인 실행 결과와 성능 개선 포인트를 실시간으로 확인 가능
+- **특징**
+  - BSON 형식 입력 및 검증
+  - Aggregation 실행 결과를 JSON 포맷으로 표시
+  - 최적화 제안을 모달 형태로 제공
+  - 시각적 트리뷰(Treeview)를 통한 단계별 파이프라인 구조 파악
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 사용 기술
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Core**
+- **React**
+- **Zustand**
 
-### `npm test`
+### **UI/UX**
+- **Tailwind CSS**
+- **Chakra UI**
+- **MUI-Treeview**
+- **React Suspense**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💡 주요 기능
+1. BSON 형식 Aggregation 파이프라인 입력 및 검증
+2. Aggregation 실행 및 결과 JSON 출력
+3. 성능 최적화 제안 제공
+4. Treeview를 통한 파이프라인 구조 시각화
+5. React Suspense 기반 로딩 상태 처리
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
